@@ -26,7 +26,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 30px;
+    padding: 50px 40px;
     background-color: #607D8B;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Arial', sans-serif;
@@ -81,6 +81,26 @@ h2  {
     font-size: 1.5rem;
 }
 
+.hovedinnholdmedlem {
+    display: start;
+    flex-direction: start;
+    align-items: start;
+    justify-content: start;
+    padding: 55px;
+    gap: 10px;
+    background-color: #E5E4E3;
+    width: 100%;
+}
+.medlemskapspriser {
+    justify-content: start;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: justify;
+    word-spacing: 5px;
+    font-size: 2.5rem;
+    line-height: 2.5;
+    padding: 5%;
+}
 
 .hovedinnhold {
     display: flex;
@@ -99,6 +119,10 @@ h2  {
 .bilde-hoved {
     img {
         border-radius: 15px;
+        @media screen {
+            height: auto;
+            width: auto;
+        }
     }
 }
 
