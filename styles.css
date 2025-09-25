@@ -120,7 +120,7 @@ h2  {
     img {
         border-radius: 15px;
         @media screen {
-            height: auto;
+            height: 750px;
             width: auto;
         }
     }
