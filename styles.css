@@ -33,49 +33,49 @@ footer {
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-between; /* plasserer knappene med lik avstand mellom */
-  align-items: center;
-  gap: 20px; /* ekstra avstand mellom knapper */
+    display: flex;
+    justify-content: space-between; /* plasserer knappene med lik avstand mellom */
+    align-items: center;
+    gap: 20px; /* ekstra avstand mellom knapper */
 }
 
 .nav-links button {
-  color: white;
-  padding: 15px 20px; /* gjør knappene like store inni */
-  border: 1px solid white;
-  border-radius: 10px;
-  background: none;
-  cursor: pointer;
-  font-size: 1rem;
-  flex: 1; /* gjør at alle knappene tar lik plass */
-  text-align: center;
-  white-space: nowrap; /* Teksten tvinges til en linje, så "kontakt oss" ikke står under hverandre */
+    color: white;
+    padding: 15px 20px; /* gjør knappene like store inni */
+    border: 1px solid white;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 1; /* gjør at alle knappene tar lik plass */
+    text-align: center;
+    white-space: nowrap; /* Teksten tvinges til en linje, så "kontakt oss" ikke står under hverandre */
 }
 
 /* når musepekeren hovrer over knapper på nav-menyen */
 .nav-links button:hover {
-  color: white;
-  transform: scale(1.1);
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 5px;
-  transition: 0.2s;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    transition: 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links button:active {
-  transform: scale(0.9);
-  transition: 0.1s;
+    transform: scale(0.9);
+    transition: 0.1s;
 }
 
 /* fjerner musepekeren fra header knapper */
 .nav-links button{
     transform: scale(1);
     transition: 0.3s;
-} 
+}
 
 /* Underoverskrift */
-h2  {
+h2 {
     text-align: center;
     margin-top: 30px;
     font-size: 1.5rem;
@@ -91,6 +91,7 @@ h2  {
     background-color: #E5E4E3;
     width: 100%;
 }
+
 .medlemskapspriser {
     justify-content: start;
     background-color: #ffffff;
@@ -110,31 +111,51 @@ h2  {
     padding: 55px;
     gap: 10px;
     background-color: #E5E4E3;
-    flex : 1; /* gjør at hovedinnholdet tar opp all tilgjengelig plass */
+    flex: 1; /* gjør at hovedinnholdet tar opp all tilgjengelig plass */
     width: 100%;
-
 }
 
 /* Bilde får runde kanter, dobbeltsjekk syntax her (men ser ut til å virke) */
 .bilde-hoved {
-    img {
-        border-radius: 15px;
-        @media screen {
-            height: 750px;
-            width: auto;
-        }
+    position: relative;
+    display: inline-block;
+}
+
+.bilde-hoved img {
+    border-radius: 15px;
+}
+
+@media screen {
+    .bilde-hoved img {
+        height: 600px;
+        width: auto;
     }
 }
 
-/* Bilde hover effekt */
-.bilde-hoved:hover {
-    transform: scale(1.02);
-    transition: 0.3s; /* hvor lang tid transform tar */
+.hover-hjemmeside-bilde {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* når du fjerner musepekeren fra bilde */
-.bilde-hoved {
-    transform: scale(1);
-    transition: 0.3s;
+
+.hover-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bilde-hoved:hover .hover-hjemmeside-bilde {
+    opacity: 1;
 }
 
 /* Footer innstillinger */
@@ -146,4 +167,3 @@ footer {
     background-color: #b11004;
     width: 100%;
 }
-
