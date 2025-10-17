@@ -1,13 +1,14 @@
-Begge to jobber på hjemmesiden sammen
-Vi bruker første dag på å finne tema og hva slags nettside vi ønsker å lage. 
-Vi har tenkt å lage en hjemmeside om "Bø Treningssenter" og det skal være fem sidetabs der. 
+Oppgave 2) Tor Alvar og Alan
 
-1) Hjem 
-- Skal inkludere medlemskap og logg inn knapp
-2) Medlemskap
-- Priser og abonnenter
-3) Nyheter
-- Random nyheter
-4) Kontakt oss
-- USN E-post adresse
+Hva vi ble enige om
+Vi bestemte oss for å lage en nettside for et treningssenter i Bø. Nettsiden skulle ha fire sider:
 
+Hjem - med klikkbare bilder av gymmen
+Medlemskap - priser og abonnementer
+Nyheter - info om nye ting hos senteret
+Kontakt oss - kontaktinfo
+
+Design
+Vi gikk for rød som hovedfarge (#b11004), hvit tekst, og en lys grå bakgrunn. Alle bildene skulle ha runde hjørner, og vi ville ha hover-effekter på de klikkbare områdene.
+Plan
+Lage grunnstrukturen først med index-sidene og image maps, så fylle på med de andre sidene. Til slutt sjekke at alt funker før innlevering.
