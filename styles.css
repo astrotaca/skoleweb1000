@@ -4,13 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 /* Footer går til bunnen hvis det er lite innhold etc */
 footer {
     text-align: center;
@@ -20,7 +18,6 @@ footer {
     width: 100%;
     margin-top: auto;
 }
-
 .header {
     color: white;
     display: flex;
@@ -31,14 +28,25 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Arial', sans-serif;
 }
-
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 80px;
+    width: auto;
+}
+.logo-tekst {
+    margin-left: -10px;
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
 .nav-links {
     display: flex;
     justify-content: space-between; /* plasserer knappene med lik avstand mellom */
     align-items: center;
     gap: 20px; /* ekstra avstand mellom knapper */
 }
-
 .nav-links button {
     color: white;
     padding: 15px 20px; /* gjør knappene like store inni */
@@ -51,7 +59,6 @@ footer {
     text-align: center;
     white-space: nowrap; /* Teksten tvinges til en linje, så "kontakt oss" ikke står under hverandre */
 }
-
 /* når musepekeren hovrer over knapper på nav-menyen */
 .nav-links button:hover {
     color: white;
@@ -62,25 +69,21 @@ footer {
     transition: 0.2s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .nav-links button:active {
     transform: scale(0.9);
     transition: 0.1s;
 }
-
 /* fjerner musepekeren fra header knapper */
 .nav-links button{
     transform: scale(1);
     transition: 0.3s;
 }
-
 /* Underoverskrift */
 h2 {
     text-align: center;
     margin-top: 30px;
     font-size: 1.5rem;
 }
-
 .hovedinnholdmedlem {
     display: start;
     flex-direction: start;
@@ -91,7 +94,6 @@ h2 {
     background-color: #E5E4E3;
     width: 100%;
 }
-
 .medlemskapspriser {
     justify-content: start;
     background-color: #ffffff;
@@ -102,7 +104,6 @@ h2 {
     line-height: 2.5;
     padding: 5%;
 }
-
 .hovedinnhold {
     display: flex;
     flex-direction: column;
@@ -114,15 +115,36 @@ h2 {
     flex: 1; /* gjør at hovedinnholdet tar opp all tilgjengelig plass */
     width: 100%;
 }
-
 /* Bilde får runde kanter, dobbeltsjekk syntax her (men ser ut til å virke) */
 .bilde-hoved {
     position: relative;
     display: inline-block;
 }
-
 .bilde-hoved img {
     border-radius: 15px;
+}
+
+.bilde-hoyre-side {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; /* legger plass mellom header */
+}
+
+.bilde-hoyre-side img {
+  border-radius: 15px;
+  max-width: auto;
+  height: auto;
+}
+
+.kontaktoss {
+    justify-content: start;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: justify;
+    word-spacing: 5px;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    padding: 5%;
 }
 
 @media screen {
@@ -131,7 +153,6 @@ h2 {
         width: auto;
     }
 }
-
 .hover-hjemmeside-bilde {
     position: absolute;
     left: 0;
@@ -146,18 +167,15 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-
 .hover-text {
     color: white;
     font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 .bilde-hoved:hover .hover-hjemmeside-bilde {
     opacity: 1;
 }
-
 /* Footer innstillinger */
 footer {
     text-align: center;
